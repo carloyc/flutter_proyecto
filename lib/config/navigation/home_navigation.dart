@@ -9,7 +9,8 @@ class HomeNavigation extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/home',
       routes: {
-        '/home' : (context) => Home()
+        '/home' : (context) => Home(),
+     
       },
     );
   }
