@@ -43,22 +43,6 @@ class _ActividadState extends State<Actividad> {
                   Container(
                     margin: const EdgeInsets.only(bottom: 16),
                     child: TextFormField(
-                      decoration:
-                          const InputDecoration(labelText: 'Contraseña'),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Este campo es obligatorio';
-                        } else {
-                          return null;
-                        }
-                      },
-                      keyboardType: TextInputType.name,
-                      controller: _contrasena,
-                    ),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(bottom: 16),
-                    child: TextFormField(
                       decoration: const InputDecoration(
                           labelText: 'Correo electrónico*'),
                       validator: (value) {
@@ -72,6 +56,22 @@ class _ActividadState extends State<Actividad> {
                       },
                       keyboardType: TextInputType.emailAddress,
                       controller: _email,
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 16),
+                    child: TextFormField(
+                      decoration:
+                          const InputDecoration(labelText: 'Contraseña'),
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return 'Este campo es obligatorio';
+                        } else {
+                          return null;
+                        }
+                      },
+                      keyboardType: TextInputType.name,
+                      controller: _contrasena,
                     ),
                   ),
                   Container(
